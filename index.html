@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mangas | Offis</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .manga-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .manga-card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+    }
+
+    .manga-card:hover {
+      transform: scale(1.03);
+    }
+
+    .manga-card img {
+      width: 100%;
+      display: block;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .manga-title {
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Mangas Populares</header>
+
+  <div class="manga-grid">
+    <a href="inf.html">
+      <div class="manga-card">
+        <img src="manga1.jpeg" alt="Manga 1">
+        <div class="manga-title">Dandan</div>
+      </div>
+    </a>
+    <a href="inf.html">
+      <div class="manga-card">
+        <img src="manga2.jpeg" alt="Manga 2">
+        <div class="manga-title">Seiken maken gakuin</div>
+      </div>
+    </a>
+    <a href="inf.html">
+      <div class="manga-card">
+        <img src="manga3.jpeg" alt="Manga 3">
+        <div class="manga-title">seire gensouki</div>
+      </div>
+    </a>
+    <a href="inf.html">
+      <div class="manga-card">
+        <img src="manga4.jpeg" alt="Manga 4">
+        <div class="manga-title">solo leveling</div>
+      </div>
+    </a>
+    <!-- Puedes duplicar este bloque para más mangas -->
+  </div>
+
+</body>
+</html>
